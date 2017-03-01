@@ -1,0 +1,79 @@
+#SFTCarePackages. Designed for SFTFactions & developed by Nafi
+
+#World in which the care packages will spawn
+World: World2
+
+#The delay after the server/plugin has been loaded in which the care packages will start spawning in x seconds
+StartSpawningAfter: 300
+
+#Spawns the package every x seconds
+SpawnInterval: 300
+
+#Despawns package after x seconds of it spawning (Put delay to 0 if you don't want it to despawn)
+DespawnAfter: 200
+
+#Tags:
+# {relation} - The relative direction in which the care package is from the player e.g. North, South-West, East etc.
+# {distance} - Distance between player and package in metres/blocks
+# {world} - World where the package has spawned
+# {x} - X coordinate of package
+# {y} - Y coordinate of package
+# {z} - Z coordinate of package
+# {packagename} - Name of the package. Names can be found below in 'CarePackages' section
+#IMPORTANT: HAVE "'" (APOSTROPHES) BEFORE AND AFTER EACH MESSAGE LINE TO ALLOW PROPER COLOR TRANSLATION
+SpawnAnnouncementMessages:
+    - '&7[&c&lCarePackage&7] A Care Package has been seen to your {relation}'
+    - '&7[&c&lCarePackage&7] Your compass now points in its direction'
+ 
+
+
+
+#Tags:
+# {player} - Player that found the package
+# {time} - Time taken for the player to find package
+DespawnAnnouncementMessages:
+    - '&7[&c&lCarePackage&7] A Care Package has been seen to your {relation}'
+    
+
+
+#Acceptable Enchantments: <Enchantment> - [In-game/User friendly name] (Do not use in-game/user friendly name)
+# PROTECTION_ENVIRONMENTAL - Protection
+# PROTECTION_FIRE - Fire Protection
+# PROTECTION_FALL - Feather falling
+# PROTECTION_EXPLOSIONS - Blast protection
+# PROTECTION_PROJECTILE - Projectile protection
+# OXYGEN - Water Breathing
+# WATER_WORKER - Aqua Affinity
+# THORNS - Thorns
+# DEPTH_STRIDER - Depth stider
+# FROST_WALKER - Frost Walker
+# BINDING_CURSE - Curse of Binding
+# DAMAGE_ALL - Sharpness
+# DAMAGE_UNDEAD - Smite
+# DAMAGE_ARTHROPODS - Bane of Arthropods
+# KNOCKBACK - Knockback
+# FIRE_ASPECT - Fire aspect
+# LOOT_BONUS_MOBS - Looting
+# SWEEPING_EDGE - Sweeping Edge
+# DIG_SPEED - Efficiency
+# SILK_TOUCH - Silk Touch
+# DURABILITY - Unbreaking
+# LOOT_BONUS_BLOCKS - Fortune
+# ARROW_DAMAGE - Power
+# ARROW_KNOCKBACK - Punch
+# ARROW_FIRE - Flame
+# ARROW_INFINITE - Infinity
+# LUCK - Luck of the sea
+# LURE - Lure
+# MENDING - Mending
+# VANISHING_CURSE - Curse of Vanishing
+
+#Package String format: ID;Damage;Amount;Enchantment,Level;Enchantment2,level etc
+#Note: ID is the only compulsory field. Damage, Amount and enchantments are optional
+
+CarePackages:
+    DiamondArmor#1:
+        - 311
+        - 310
+        - 312
+        - 313

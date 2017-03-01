@@ -1,0 +1,8 @@
+name: SFTCarePackages
+main: com.Nafi.mc.SFTCarePackages.CarePackage
+version: 1.0
+commands:
+    spawnpackage:
+permissions:
+    sftcarepackage.spawn:
+        description: Able to spawn care packages
